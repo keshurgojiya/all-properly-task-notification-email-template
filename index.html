@@ -38,7 +38,7 @@
       <td align="center">
 
         <!-- Container -->
-        <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="650" class="container"
+        <table role="presentation" width="650" class="container" cellpadding="0" cellspacing="0" border="0"
           style="max-width:650px; background:#ffffff; border:1px solid #e4e9f0; border-radius:10px; padding:20px;">
 
           <!-- Logo -->
@@ -53,8 +53,8 @@
 
           <!-- Headline -->
           <tr>
-            <td align="center" style="color:#475567; font-size:28px; font-weight:bold; padding:20px 20px 10px;">
-              Your Weekly Task Digest
+            <td align="center" style="color:#475567; font-size:26px; font-weight:bold; padding:20px 20px 10px;">
+              You have new tasks assigned today on AllProperly
             </td>
           </tr>
 
@@ -68,96 +68,35 @@
 
           <!-- Intro -->
           <tr>
-            <td align="center" style="color:#475567; font-size:16px; line-height:24px; padding:20px 30px;">
-              Hi <strong>Brandan</strong>, here’s a quick overview of your property tasks this week.<br>
-              Staying on top of maintenance helps you avoid costly surprises and keeps your home running smoothly.
-            </td>
-          </tr>
-
-          <!-- Summary Stats -->
-          <tr>
-            <td style="padding:0 20px 30px;">
-              <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
-                style="background:#f5f8f6; border:1px solid #e4e9f0; border-radius:10px;">
-                <tr>
-                  <td class="stack-column" align="center" width="33.33%" style="padding:20px;">
-                    <div style="font-size:24px; font-weight:bold; color:#475567;">3</div>
-                    <div style="font-size:14px; color:#475567;">Upcoming</div>
-                  </td>
-                  <td class="stack-column" align="center" width="33.33%" style="padding:20px;">
-                    <div style="font-size:24px; font-weight:bold; color:#d16666;">2</div>
-                    <div style="font-size:14px; color:#475567;">Overdue</div>
-                  </td>
-                  <td class="stack-column" align="center" width="33.33%" style="padding:20px;">
-                    <div style="font-size:24px; font-weight:bold; color:#7baa98;">5</div>
-                    <div style="font-size:14px; color:#475567;">Completed</div>
-                  </td>
-                </tr>
-              </table>
+            <td align="center" style="color:#475567; font-size:16px; line-height:24px; padding:10px 30px 20px;">
+              Hi <strong>{{firstName}}</strong>,<br>
+              Here’s what’s new on your AllProperly dashboard today:
             </td>
           </tr>
 
           <!-- Task List -->
           <tr>
-            <td style="padding:0 20px 20px;">
+            <td style="padding:0px 0px 20px;">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"
                 style="background:#f5f8f6; border:1px solid #e4e9f0; border-radius:10px;">
 
-                <!-- Section Title -->
-                <tr>
-                  <td style="padding:20px; font-size:16px; color:#475567; font-weight:bold; text-align:left;">
-                    Tasks to focus on this week:
-                  </td>
-                </tr>
-
-                <!-- Example Task Row 1 -->
+                <!-- Example Task Row -->
                 <tr>
                   <td style="padding:15px 20px; font-size:15px; color:#475567; border-top:1px solid #e4e9f0;">
-                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                      <tr>
-                        <td width="40" valign="top" style="padding-right:15px;">
-                          <img src="images/filter.png" alt="Air Filter" width="40"
-                            style="display:block; border:0; outline:none; text-decoration:none;">
-                        </td>
-                        <td valign="middle" style="font-size:15px; color:#475567;">
-                          <strong>Replace HVAC Filter</strong> – Due: Sep 29, 2025
-                        </td>
-                      </tr>
-                    </table>
+                    <strong>Change Air Filter</strong><br>
+                    Assigned by: Brandan Fisher<br>
+                    Property: Oak Street Rental Property<br>
+                    Due: <strong>October 8, 2025</strong>
                   </td>
                 </tr>
 
-                <!-- Example Task Row 2 (Overdue) -->
-                <tr>
-                  <td style="padding:15px 20px; font-size:15px; color:#d16666; border-top:1px solid #e4e9f0;">
-                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                      <tr>
-                        <td width="40" valign="top" align="center" style="padding-right:15px;">
-                          <img src="images/overdue.png" alt="Gutters" width="36"
-                            style="display:block; border:0; outline:none; text-decoration:none;">
-                        </td>
-                        <td valign="middle" style="font-size:15px; color:#d16666;">
-                          <strong>Clean Gutters</strong> – Overdue by 3 days
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-
-                <!-- Example Task Row 3 -->
+                <!-- Repeat dynamically for multiple tasks -->
                 <tr>
                   <td style="padding:15px 20px; font-size:15px; color:#475567; border-top:1px solid #e4e9f0;">
-                    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0">
-                      <tr>
-                        <td width="40" valign="top" style="padding-right:15px;">
-                          <img src="images/smoke.png" alt="Smoke Detector" width="40"
-                            style="display:block; border:0; outline:none; text-decoration:none;">
-                        </td>
-                        <td valign="middle" style="font-size:15px; color:#475567;">
-                          <strong>Test Smoke Detectors</strong> – Due: Oct 1, 2025
-                        </td>
-                      </tr>
-                    </table>
+                    <strong>Check Smoke Detectors</strong><br>
+                    Assigned by: Alex Johnson<br>
+                    Property: Pine Grove Apartment<br>
+                    Due: <strong>October 12, 2025</strong>
                   </td>
                 </tr>
 
@@ -178,22 +117,25 @@
 
           <!-- CTA Button -->
           <tr>
-            <td align="center" style="padding:25px 20px 20px;">
+            <td align="center" style="padding:20px;">
               <a href="https://app.allproperly.com/dashboard" target="_blank"
                 style="background:#7baa98; color:#ffffff; text-decoration:none; font-size:16px; font-weight:600; padding:12px 28px; border-radius:8px; display:inline-block;">
-                Review All Tasks →
+                View All Tasks →
               </a>
+            </td>
+          </tr>
+
+          <!-- Outro -->
+          <tr>
+            <td align="center" style="color:#475567; font-size:14px; line-height:22px; padding:10px 30px 20px;">
+              Keep your property in proper order — everything’s easier when it’s AllProperly.
             </td>
           </tr>
 
           <!-- Footer -->
           <tr>
-            <td align="center" style="color:#475567; font-size:14px; line-height:22px; padding:20px;">
-              You’re receiving this task digest from AllProperly.com to help you stay on top of property maintenance.
-            </td>
-          </tr>
-          <tr>
-            <td align="center" style="color:#475567; font-size:14px; line-height:22px; padding:0 20px 20px;">
+            <td align="center" style="color:#475567; font-size:13px; line-height:20px; padding:20px;">
+              You’re receiving this email because new tasks were assigned to you in AllProperly.<br>
               © 2025 All Properly LLC. |
               <a href="#" target="_blank" style="color:#6A8976; text-decoration:none;">Unsubscribe</a>
             </td>
@@ -205,8 +147,6 @@
       </td>
     </tr>
   </table>
-  <!-- End Wrapper -->
 
 </body>
-
 </html>
